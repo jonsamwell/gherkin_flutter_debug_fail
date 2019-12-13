@@ -30,8 +30,10 @@ Future<void> main(List<String> arguments) {
     ]
 //    ..customStepParameterDefinitions = [ColourParameter()]
     ..restartAppBetweenScenarios = true
+    ..targetAppWorkingDirecotry = "../"
     ..targetAppPath = "test_driver/app.dart"
     ..tagExpression = "@testable" // uncomment to see an example of running scenarios based on tag expressions
     ..exitAfterTestRun = false; // set to false if debugging to exit cleanly
+
   return GherkinRunner().execute(config);
 }

@@ -12,10 +12,13 @@
         {
             "name": "Debug Features Tests",
             "request": "launch",
-            "type": "dart",
-            "program": "app_test.dart",
             "cwd": "test_driver",
-            "args": ["--feature","home.feature"]
+            "program": "app_test.dart",
+            "type": "dart",
+            "args": [
+                "--feature",
+                "home.feature"
+            ]
         }
     ]
 }
